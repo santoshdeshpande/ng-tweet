@@ -6,6 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:santoshdeshpande/ng-tweet.git"
+  },
   "author": "Santosh Suresh",
   "license": "ISC",
   "devDependencies": {
@@ -30,5 +34,11 @@
     "gulp-util": "^3.0.1",
     "main-bower-files": "^2.0.0",
     "tiny-lr": "^0.1.4"
+  },
+  "dependencies": {
+    "express": "^4.9.0",
+    "node-tweet-stream": "^1.4.0",
+    "socket.io": "^1.1.0",
+    "twitter-text": "^1.9.4"
   }
 }

@@ -1,4 +1,4 @@
-var app = angular.module('ngTweet',['ui.router']);
+var app = angular.module('ngTweet',['ui.router','ngAnimate']);
 
 
 app.config(function($stateProvider, $urlRouterProvider){	

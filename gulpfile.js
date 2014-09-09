@@ -71,7 +71,7 @@ gulp.task('index', function() {
 });
 
 gulp.task('watch', function() {	
-	p.livereload.listen();
+//	p.livereload.listen();
 	gulp.watch('app/index.html', ['index']);
 	gulp.watch('app/styles/**/*.scss', ['styles']).on('change', p.livereload.changed);
 	gulp.watch('app/scripts/**/*.js', ['scripts']).on('change', p.livereload.changed);

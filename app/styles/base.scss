@@ -8,3 +8,42 @@ body {
   color : $color;
   box-sizing: border-box;
 }
+
+.media {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.animate-enter,
+.animate-leave
+{
+  transition: 300ms cubic-bezier(0.420, 0.000, 0.580, 1.000) all;
+}
+
+.animate-enter {
+  top: -100%;
+}
+.animate-enter.animate-enter-active {
+  top: 0;
+}
+
+.animate-leave {
+  top: 0;
+}
+.animate-leave.animate-leave-active{
+  top: 100%;
+}
+
+.row.ng-enter, .row.ng-leave {
+  transition: all 1s ease-in-out;
+}
+.row.ng-enter, .row.ng-leave.ng-leave-active {
+//  line-height: 0;
+  opacity: 0;
+  background-color: #ffee00;
+}
+.row.ng-leave, .row.ng-enter.ng-enter-active {
+//  line-height: 20px;
+  background-color: #fff;
+  opacity: 1;
+}

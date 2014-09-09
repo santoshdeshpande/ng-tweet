@@ -1,3 +1,18 @@
-<h1>Hello World</h1>
-
-        <p>{{world}}</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h1 ng-hide="tweets.length > 0">Waiting for the tweets to arrive...</h1>
+            <ul class="media-list">
+                <li class="media row" ng-repeat="tweet in tweets" ng-animate="animate">
+                    <a class="pull-left" href="#">
+                        <img class="media-object" ng-src="{{tweet.picture}}" alt="{{tweet.handle}}">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{tweet.user}} <small>@{{tweet.handle}}</small></h4>
+                        <span ng-bind-html="tweet.txt | unsafe"></span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
